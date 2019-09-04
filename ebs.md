@@ -53,3 +53,21 @@ Can encrypt on fly from unencrypted volume.
 Can only attach to stopped instances.
 
 Applied code to the instance.
+
+Remove volume from instance disassociates code with instance.
+
+# Monitoring
+
+If AWS detects the volume is `impaired` it will suspend IO operations. Can override with `autoEnableIO`.
+
+# Copying
+
+5 concurrent copy requests per region.
+
+Tags are not copied.
+
+# Modifications
+
+Can take around 24 hours for modifications to take affect.
+
+IO changes in a few minutes to few hours.
