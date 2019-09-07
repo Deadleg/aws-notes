@@ -6,7 +6,15 @@ Sharing unencrypted snapshot with another account allows other account to restor
 
 ## Storage
 
+### gp2
+
 Up to 64TiB of storage except SQLServer up to 16TiB. Min 20GiB
+
+### Provisioned IOPs
+
+100 GiB - 64TiB _except_ sqlserver, max 16 TiB, min 20GiB for express/web, 100GiB otherwise.
+
+1,000 - 80,000 IOPs _except_ sqlserver max 64,000 on Nitro instances
 
 ## Read replicas
 
