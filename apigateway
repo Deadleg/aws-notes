@@ -1,0 +1,14 @@
+# API Gateway
+
+## Types
+
+Edge: runs on POP nodes. Global presence.
+Regional: Only deployed in region, better connection throughput.
+Private: Only accessable through VPC.
+
+## Authentication
+
+- `CUSTOM`
+- `COGNITO_USER_POOLS`
+- `AWS_IAM`
+
