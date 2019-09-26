@@ -1,5 +1,7 @@
 # API Gateway
 
+{api-id}.execute-api.{region}.amazonaws.com
+
 ## Types
 
 Edge: runs on POP nodes. Global presence.
@@ -12,3 +14,8 @@ Private: Only accessable through VPC.
 - `COGNITO_USER_POOLS`
 - `AWS_IAM`
 
+## Lambda backend
+
+- Proxy integration
+- Custom (non-proxy integration
+- Async integration: `x-amz-invocation-type: Event`
