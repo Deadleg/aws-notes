@@ -30,3 +30,26 @@ Targets over IPv4 regardless of client connection type.
 - path-pattern
 - query-string
 - source-ip
+
+### Target groups
+
+Types:
+
+- instances
+- ip (internal ips)
+- lambda
+
+Algorithms:
+
+- round_robin
+- least_outstanding_requests
+
+Can slow start new targets (ramp up requests in an up to 15 minute period).
+
+5 minute (default) deregistration delay.
+
+### Lambda targets
+
+Max body size 1mb. Max response size 1mb.
+
+## NLB
