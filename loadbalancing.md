@@ -53,3 +53,19 @@ Can slow start new targets (ramp up requests in an up to 15 minute period).
 Max body size 1mb. Max response size 1mb.
 
 ## NLB
+
+Level 4 load balancer.
+
+Target select by flow hash algorithm.
+
+TCP: Protocol, Source IP/port, Target IP/port, TCP seq number.
+UDP: Protocol, Source IP/port, Target IP/port.
+
+For public traffic can associate 1 public IP per subnet.
+
+### Target groups
+
+- instance
+- internal ip
+
+If routing by ip, the source IP is the load balancer IP. If routing by instance, then the source IP is the client IP.
