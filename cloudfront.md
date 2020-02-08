@@ -61,3 +61,33 @@ Querying string forwards & cache:
 ### Distribution
 
 Can enable IPv6 unless you are using signed URLs or signed cookies, or if using a custom policy using `IpAddress`.
+
+## Signed URLs & cookies
+
+Can specify
+
+- End datetime for URL validity
+- (optional) Start datetime for URL validity
+- (optional) Valid IP addresses
+
+Must use RSA-SHA1.
+
+Recommended to rotate every 90 days.
+
+Use signed URLs when:
+
+- Want to use RTMP.
+- Want to restrict individual files.
+- Users use a client that does not support cookies.
+
+Signed cookies when:
+
+- Want to provide access to multiple files.
+- Don't want to change URLs.
+
+Cannot use signed cookies/URLs if the following query string parameters are present:
+
+- Expires
+- Policy
+- Signature
+- Key-Pair-Id
