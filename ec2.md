@@ -70,7 +70,7 @@ Internet traffic and direct connect are limited to 5 Gbps.
 
 Each partition on its own rack.
 
-Max 7 partitions per AZ.
+Max 7 partitions per AZ. No limited of instances per partition.
 
 Group with dedicated instances can only have 2 partitions.
 
